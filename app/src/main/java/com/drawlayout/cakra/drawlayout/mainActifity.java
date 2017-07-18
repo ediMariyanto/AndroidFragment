@@ -97,7 +97,11 @@ public class mainActifity extends AppCompatActivity
             fragmentTransaction.replace(R.id.frameLayout, aboutFragment);
             fragmentTransaction.commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_input_karyawan) {
+            InputKaryawan inputKaryawan = new InputKaryawan();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frameLayout, inputKaryawan);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_manage) {
 
